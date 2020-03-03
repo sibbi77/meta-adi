@@ -8,6 +8,8 @@ To add Analog devices tools (eg: libiio) the [meta-adi-core](https://github.com/
 
 ### Building with Petalinux
 
+[![Build Status](http://10.48.65.12:8080/buildStatus/icon?job=master%2Fmeta-adi-petalinux%2Ftest&build=29)](http://10.48.65.12:8080/job/master/job/meta-adi-petalinux/job/test/29/)
+
 Xilinx based platforms use Petalinx SDK in order to customize, build and deploy Embedded Linux on their platforms. Petalinux is a set of tools which work on top of yocto making it easy to add extra custom layers. For more information on Petalinux and on how to install the SDK refer to the following links:
 
 * [Petalinux User guide](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2018_3/ug1144-petalinux-tools-reference-guide.pdf)
@@ -78,6 +80,8 @@ EXTRA_USERS_PARAMS = "  \
 ```
 
 ### Extending the devicetree
+
+[![Build Status](http://10.48.65.12:8080/buildStatus/icon?job=master%2Fmeta-adi-petalinux%2Ftest)](http://10.48.65.12:8080/job/master/job/meta-adi-petalinux/job/test/)
 
 To extend ADI devicetrees, the normal Petalinux method should be used. Hence, the `system-user.dtsi` file should be used. This file is located under `path-to-project/project-spec/meta-user/recipes-bsp/device-tree/files/`. There is also a `device-tree.bbappend` which automatically selects this file for the build. With this mind, one can either:
 
